@@ -91,14 +91,10 @@ color: #646a6f;
 <h3 class="description">Твій вклад в розвиток сильного і відкритого суспільства, де ти можеш зібрати гроші на проект. Знайди стартовий капітал для соціального бізнесу, гроші на розробку винаходу, зйомку фільму та інше. Стань співзасновником добрих справ – підтримай коштами кращі проекти.</h3>
 </div>
 
-<form method="POST" action="https://www.liqpay.com/api/3/checkout" 
-accept-charset="utf-8">
-<input type="hidden" name="data" value="eyAidmVyc2lvbiIgOiAzLCAicHVibGljX2tleSIgOiAieW91cl9wdWJsaWNfa2V5IiwgImFjdGlv
-biIgOiAicGF5IiwgImFtb3VudCIgOiAxLCAiY3VycmVuY3kiIDogIlVTRCIsICJkZXNjcmlwdGlv
-biIgOiAiZGVzY3JpcHRpb24gdGV4dCIsICJvcmRlcl9pZCIgOiAib3JkZXJfaWRfMSIgfQ=="/>
-<input type="hidden" name="signature" value="QvJD5u9Fg55PCx/Hdz6lzWtYwcI="/>
-<input type="image" 
-src="//static.liqpay.com/buttons/p1ru.radius.png"/>
+<form method="POST" accept-charset="utf-8" action="https://www.liqpay.com/api/3/checkout">
+<input type="hidden" name="data" value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJwdWJsaWNfa2V5IjoiaTg1NDMzMDU4ODY2IiwiYW1vdW50IjoiMSIsImN1cnJlbmN5IjoiVVNEIiwiZGVzY3JpcHRpb24iOiJQcm9qZWN0MSIsInR5cGUiOiJkb25hdGUiLCJsYW5ndWFnZSI6ImVuIn0=" />
+<input type="hidden" name="signature" value="rfc1cyQH2q/2C3vjGYy5P4lJ1Wk=" />
+<input type="image" src="//static.liqpay.com/buttons/d1en.png" name="btn_text" />
 </form>
 
 
