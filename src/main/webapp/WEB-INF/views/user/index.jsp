@@ -86,6 +86,7 @@ a:hover {
 a{
 color:black !important;
 }
+
 </style>
 <div class="nikka">
 	<div class="col-md-12">
@@ -139,7 +140,7 @@ color:black !important;
 </div>
 	
 	<div class="container">
-	<div class="col-md-12">
+	<div class="col-md-12" style="margin-top: 20px;">
 	<c:forEach items="${page.content}" var="project">	
 				
 	  <div class="col-md-4 col-xs-4" style="border: 1px solid #F1EEEA;  margin:5px; padding: 0px; width:358px; background-color: white; height:380px; position:relative;">
