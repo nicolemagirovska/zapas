@@ -18,6 +18,11 @@ About this project
 <h3 class="normal mb3 mb7-sm mobile-hide">
 About this project
 </h3>
+<form method="POST" accept-charset="utf-8" action="https://www.liqpay.com/api/3/checkout">
+<input type="hidden" name="data" value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJwdWJsaWNfa2V5IjoiaTg1NDMzMDU4ODY2IiwiYW1vdW50IjoiMSIsImN1cnJlbmN5IjoiVVNEIiwiZGVzY3JpcHRpb24iOiJQcm9qZWN0MSIsInR5cGUiOiJkb25hdGUiLCJsYW5ndWFnZSI6ImVuIn0=" />
+<input type="hidden" name="signature" value="rfc1cyQH2q/2C3vjGYy5P4lJ1Wk=" />
+<input type="image" src="//static.liqpay.com/buttons/d1en.png" name="btn_text" />
+</form>
 </div>
 <div class="full-description js-full-description responsive-media formatted-lists">
 <h1 id="h:hello"><b>Hello!</b></h1><p>My name is Kim Bjørn and welcome to the <b>PUSH TURN MOVE</b> Kickstarter campaign!</p><p>Like many others I have been following the development of music technology for years. As those years passed, I began to imagine combining my interest for design with my love of gear - in order to write a comprehensive book about interface design in electronic music.</p><p>PUSH TURN MOVE shows all kinds of equipment but the ambition goes further: It provides a categorization of musical gear and software and explores the functional, artistic and aesthetic world of user interfaces in the context of making electronic music.</p><p>Initially the book was born out of my own passion. However it has now developed into a multi-voiced project since it presents the diverse thoughts of a long list of innovative makers, artists and companies who conceived or use these great music making tools. </p><p>Quite unique is that a string of significant brands have joined the book side by side to share their knowledge about the growing family of instruments and software for making electronic music. </p><p>So what exactly is PUSH TURN MOVE and why do we seek funding on Kickstarter? The answer is that PUSH TURN MOVE is a niche book, not aimed at a mainstream audience. Watch the video, take the tour below and please support the book by selecting a reward if you like the idea.</p><p><i>Kim Bjørn, Copenhagen, April 2017</i></p><p><i>&nbsp;</i></p><h1 id="h:about-the-book">About the book</h1><div class="template asset" contenteditable="false" data-id="16291374">

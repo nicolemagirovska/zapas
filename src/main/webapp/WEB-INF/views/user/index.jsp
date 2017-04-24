@@ -12,7 +12,7 @@
 </security:authorize>
 <style>
 body{
-    background-color: #f2f2f2 !important;
+    background-color: #ffffff!important;
     }
 .nikka{
 margin-top:-20px !important;
@@ -53,7 +53,39 @@ background-color: #e6e6e6 !important;
 .pagination>li>a{
 color: #646a6f;
 }
+.size{
+margin-left: 320px !important;
+margin-top: -35px !important;
+}
+form{
+margin-left: 58px !important;
 
+}
+.project-card.project-card-tall .project-progress-bar .project-percent-pledged, .project-card.project-card-tall-big .project-progress-bar .project-percent-pledged {
+    background-color: #2BDE73;
+    height: 100%;
+}
+
+element.style {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.container-fluid {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+   }
+ .col-md-12{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+   }
+a:hover {
+    color: #333 !important;
+    text-decoration: none !important;
+}
+
+a{
+color:black !important;
+}
 </style>
 <div class="nikka">
 	<div class="col-md-12">
@@ -65,13 +97,15 @@ color: #646a6f;
 			</ol>
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<img src="/resources/img/like.png" alt="N">
+				<a href="/PUSH TURN MOVE">
+					<img src="/resources/img/pushturn.jpg" alt="N">
+					</a>
 				</div>
 				<div class="item">
-					<img src="/resources/img/like.png" alt="K">
+					<img src="/resources/img/togood.jpg" alt="K">
 				</div>
 				<div class="item">
-					<img src="/resources/img/like.png" alt="A">
+					<img src="/resources/img/pushturn.jpg" alt="A">
 				</div>
 			</div>
 			<a class="left carousel-control" href="#myCarousel" role="button"
@@ -86,49 +120,37 @@ color: #646a6f;
 
 
 <div class="zagolovok">
-<h1 class="title">Краудфандинг в Україні</h1>
+<h1 class="title">Crowdfunding in Ukraine</h1>
 <br>
-<h3 class="description">Твій вклад в розвиток сильного і відкритого суспільства, де ти можеш зібрати гроші на проект. Знайди стартовий капітал для соціального бізнесу, гроші на розробку винаходу, зйомку фільму та інше. Стань співзасновником добрих справ – підтримай коштами кращі проекти.</h3>
+<h3 class="description">Contribute to the development of crowdfunding and social innovation in Ukraine. Your contribution to the development of a strong and open society where you can raise money for the project. Spot starting capital for social businesses money to develop the invention, the filming and more. Become a co-founder of a good thing - Support means the best projects.</h3>
 </div>
-
-<form method="POST" accept-charset="utf-8" action="https://www.liqpay.com/api/3/checkout">
-<input type="hidden" name="data" value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJwdWJsaWNfa2V5IjoiaTg1NDMzMDU4ODY2IiwiYW1vdW50IjoiMSIsImN1cnJlbmN5IjoiVVNEIiwiZGVzY3JpcHRpb24iOiJQcm9qZWN0MSIsInR5cGUiOiJkb25hdGUiLCJsYW5ndWFnZSI6ImVuIn0=" />
-<input type="hidden" name="signature" value="rfc1cyQH2q/2C3vjGYy5P4lJ1Wk=" />
-<input type="image" src="//static.liqpay.com/buttons/d1en.png" name="btn_text" />
-</form>
-
-
-<div class="row">
-<div class="col-md-3">
-		<div class="row">
-			<div class="col-md-6 col-xs-6 text-center">
-				<custom:size posibleSizes="1,2,5,10" size="${page.size}" />
-			</div>
-		
-		<form:form modelAttribute="filter" action="/" method="get" class="form-inline">
-			        <div class="form-group">
+<div class="col-md-12">
+<div class="col-md-4"></div>
+<div class="col-md-4"></div>
+<div class="col-md-4">
+					<form:form modelAttribute="filter" action="/" method="get" class="form-inline">
 					<form:input path="search" placeholder="Search" class="form-control" />
 					<custom:hiddenInputs excludeParams="search"/>
 					<button type="submit" class="btn btn-primary">Ok</button>
-					</div>
 					</form:form>
- 		</div>
-	</div>
+					<div class="size">
+					<custom:size posibleSizes="1,2,5,10" size="${page.size}" />
+					</div>
+</div>
 	
 	<div class="container">
 	<div class="col-md-12">
 	<c:forEach items="${page.content}" var="project">	
 				
-	
-	
-	  <div class="col-md-4 col-xs-4" style="border: 1px solid black; margin:5px; padding: 0px; width:358px">
-	  	<div class="col-md-12 col-xs-12" style="margin: 0px; padding: 0px;"><img width="100%" height="230px" src="/images/project/${project.id}.jpg?version=${project.version}"></div>
-	  	<div class="col-md-12 col-xs-12" style="margin: 0px; padding: 0px;">Назва - <a href="/${project.name}">${project.name}</a></br>Потрібна сума - ${project.sumNeeded}</div>
-	  </div>
-	  
-	
-	  
-
+	  <div class="col-md-4 col-xs-4" style="border: 1px solid #F1EEEA;  margin:5px; padding: 0px; width:358px; background-color: white; height:380px; position:relative;">
+	  	<div class="col-md-12 col-xs-12" style="margin: 0px; padding: 0px;"><a href="/${project.name}"><img width="100%" height="230px" src="/images/project/${project.id}.jpg?version=${project.version}"></a></div>
+	  	<div class="col-md-12 col-xs-12" style="margin: 0px; padding: 0px;">Project name: <a href="/${project.name}">${project.name}</a></br>Author: ${project.author}</br>Description: ${project.shortDescription}</div>
+	  	      <div class="footer" style="position:absolute; bottom:0;">  
+	  	      <div class="col-md-12 col-xs-12" style="margin: 0px; padding: 0px;">Funded: ${project.sumCollected}</div>
+	  	              <div class="col-md-12" style="width: 77.81%; height:30%; background-color:#2BDE73;"></div>    
+             </div>    
+                  
+	  </div> 
 			</c:forEach>
 			</div>
 			</div>

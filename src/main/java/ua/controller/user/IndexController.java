@@ -34,9 +34,9 @@ public class IndexController {
 		return "user-index";
 	}
 	
-	@RequestMapping("/nfhjdbjhvd")
+	@RequestMapping("/PUSH TURN MOVE")
 	public String project(Model model, @PageableDefault Pageable pageable, @ModelAttribute("filter") BasicFilter filter){
 		model.addAttribute("page",projectService.findAll(filter, pageable));
-		return "user-nfhjdbjhvd";
+		return "user-PUSH TURN MOVE";
 	}
 	}

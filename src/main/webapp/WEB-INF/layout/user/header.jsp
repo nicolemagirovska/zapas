@@ -78,6 +78,11 @@ margin-top:8px !important;
                  <ul class="nav navbar-nav navbar-right">
                  	  <li><a href="/admin">Creator Page</a></li>
 				 </ul>
+				 <security:authorize access="isAuthenticated()">
+	                    <form:form class="navbar-form navbar-right" action="/logout" method="POST">
+	                        <button class="btn btn-primary">Sign out</button>
+	                    </form:form>
+                 </security:authorize>
 				</div>
 				
          	

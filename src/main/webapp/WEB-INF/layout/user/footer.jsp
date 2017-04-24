@@ -7,10 +7,10 @@
     }
     
     </style>
-<footer class="navbar navbar-default navbar-fixed-bottom">
+<footer class="navbar navbar-default">
 	<div class="container-fluid">
 		<div class="row text-center">
-			<h5>Зроби внесок на розвиток краудфандингу та соціальних інновацій в Україні</h5>
+			<h5>Contribute to the development of crowdfunding and social innovation in Ukraine</h5>
 			
 		</div>
 	</div>
