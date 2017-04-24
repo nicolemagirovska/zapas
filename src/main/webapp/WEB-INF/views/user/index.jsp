@@ -112,6 +112,24 @@ color: #646a6f;
  		</div>
 	</div>
 	
+	<div class="container">
+	<div class="col-md-12">
+	<c:forEach items="${page.content}" var="project">	
+				
+	
+	
+	  <div class="col-md-4 col-xs-4" style="border: 1px solid black; margin:5px; padding: 0px; width:358px">
+	  	<div class="col-md-12 col-xs-12" style="margin: 0px; padding: 0px;"><img width="100%" height="230px" src="/images/project/${project.id}.jpg?version=${project.version}"></div>
+	  	<div class="col-md-12 col-xs-12" style="margin: 0px; padding: 0px;">Назва - <a href="/${project.name}">${project.name}</a></br>Потрібна сума - ${project.sumNeeded}</div>
+	  </div>
+	  
+	
+	  
+
+			</c:forEach>
+			</div>
+			</div>
+	
 <div class="col-md-12 col-xs-12">  						
 		<div class="row">
 		    <div class="col-xs-1 col-xs-1"><h5>Image</h5></div>
@@ -128,7 +146,7 @@ color: #646a6f;
 			<c:forEach items="${page.content}" var="project">			
 				<div class="row">
 				    <div class="col-xs-1 col-xs-1"><img class="img-rounded" width="100%" src="/images/project/${project.id}.jpg?version=${project.version}"></div>
-				    <div class="col-md-1 col-xs-1">${project.name}</div>
+				    <div class="col-md-1 col-xs-1"><a href="/${project.name}">${project.name}</a></div>
 					<div class="col-md-1 col-xs-1">${project.author}</div>
 					<div class="col-md-1 col-xs-1">${project.shortDescription}</div>
 					<div class="col-md-1 col-xs-1">${project.fullDescription}</div>
