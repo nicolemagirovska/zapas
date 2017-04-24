@@ -101,6 +101,9 @@ color: #646a6f;
 <div class="row">
 <div class="col-md-3">
 		<div class="row">
+			<div class="col-md-6 col-xs-6 text-center">
+				<custom:size posibleSizes="1,2,5,10" size="${page.size}" />
+			</div>
 		
 		<form:form modelAttribute="filter" action="/" method="get" class="form-inline">
 			        <div class="form-group">
@@ -130,34 +133,7 @@ color: #646a6f;
 			</div>
 			</div>
 	
-<div class="col-md-12 col-xs-12">  						
-		<div class="row">
-		    <div class="col-xs-1 col-xs-1"><h5>Image</h5></div>
-		    <div class="col-xs-1 col-xs-1"><h5>Project name</h5></div>
-		    <div class="col-xs-1 col-xs-1"><h5>Author</h5></div>
-		    <div class="col-xs-1 col-xs-1"><h5>Short Descr</h5></div>
-		   	<div class="col-xs-1 col-xs-1"><h5>Full Descr</h5></div>
-		   	<div class="col-xs-1 col-xs-1"><h5>Sum Needed</h5></div>
-		   	<div class="col-xs-1 col-xs-1"><h5>Sum Collected</h5></div>
-		    <div class="col-xs-1 col-xs-1"><h5>Date of application</h5></div>
-		    <div class="col-xs-1 col-xs-1"><h5>Deadline</h5></div>
-			
-		</div>
-			<c:forEach items="${page.content}" var="project">			
-				<div class="row">
-				    <div class="col-xs-1 col-xs-1"><img class="img-rounded" width="100%" src="/images/project/${project.id}.jpg?version=${project.version}"></div>
-				    <div class="col-md-1 col-xs-1"><a href="/${project.name}">${project.name}</a></div>
-					<div class="col-md-1 col-xs-1">${project.author}</div>
-					<div class="col-md-1 col-xs-1">${project.shortDescription}</div>
-					<div class="col-md-1 col-xs-1">${project.fullDescription}</div>
-					<div class="col-md-1 col-xs-1">${project.sumNeeded}</div>
-					<div class="col-md-1 col-xs-1">${project.sumCollected}</div>
-				    <div class="col-md-1 col-xs-1">${project.dateOfApplication}</div>
-					<div class="col-md-1 col-xs-1">${project.deadline}</div>
-					
-				</div>
-			</c:forEach>
-	</div>
+
 	</div>
 <div class="row">
 	<div class="col-md-12 col-xs-12 text-center">
