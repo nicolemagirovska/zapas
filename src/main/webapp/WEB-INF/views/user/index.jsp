@@ -144,7 +144,7 @@ color:black !important;
 	<c:forEach items="${page.content}" var="project">	
 				
 	  <div class="col-md-4 col-xs-4" style="border: 1px solid #F1EEEA;  margin:5px; padding: 0px; width:358px; background-color: white; height:380px; position:relative;">
-	  	<div class="col-md-12 col-xs-12" style="margin: 0px; padding: 0px;"><a href="/${project.id}"><img width="100%" height="230px" src="/resources/img/${project.id}.jpg?version=${project.version}"></a></div>
+	  	<div class="col-md-12 col-xs-12" style="margin: 0px; padding: 0px;"><a href="/${project.name}"><img width="100%" height="230px" src="/resources/img/${project.id}.jpg?version=${project.version}"></a></div>
 	  	<div class="col-md-12 col-xs-12" style="margin: 0px; padding: 0px;">Project name: <a href="/${project.name}">${project.name}</a></br>Author: ${project.author}</br>Description: ${project.shortDescription}</div>
 	  	      <div class="footer" style="position:absolute; bottom:0;">  
 	  	      <div class="col-md-12 col-xs-12" style="margin: 0px; padding: 0px;">Funded: ${project.sumCollected}</div>
